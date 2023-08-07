@@ -43,6 +43,7 @@ class TrabajoFinal(models.Model):
     def __str__(self):
         return f'{self.descripcion}'
 
+
 class Integrante(models.Model):
     trabajo_final = models.ForeignKey(TrabajoFinal, on_delete=models.PROTECT,
                                       related_name='trabajos_finales_integrante')
