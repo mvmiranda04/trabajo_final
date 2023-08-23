@@ -16,4 +16,4 @@ class AsesorAdmin(admin.ModelAdmin):
 
 @admin.register(Alumno)
 class AlumnoAdmin(admin.ModelAdmin):
-    search_fields = ('matricula',)
+    search_fields = ('matricula', 'dni')
